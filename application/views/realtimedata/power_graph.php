@@ -1,7 +1,7 @@
 <form class="form-horizontal">
   <div class="col-sm-4 col-sm-offset-4">
     <div class="input-group input-group-sm">
-        <input class="form-control datepicker" type="text" name="date" value="<?php echo date("Y-m-d",time());?>" onClick="WdatePicker({maxDate:'%y-%M-%d', <?php echo $this->lang->line('graph_language')?>, onpicked:show_graph})" readonly>
+        <input class="form-control datepicker" type="text" name="date" value="<?php echo date("Y-m-d",time());?>" onClick="WdatePicker({maxDate:'%y-%M-%d', <?php echo $this->lang->line('graph_language')?>, onpicked:select_date})" readonly>
         <span class="input-group-btn">
             <button class="btn btn-default" id="query" type="button"><?php echo $this->lang->line('button_query')?></button>
         </span>
@@ -127,7 +127,11 @@ $(document).ready(function() {
     	show_graph();
     });
 });
-
+function select_date()
+{
+	$(".datepicker").blur();
+	show_graph();
+}
 function show_graph()
 {
 	$.ajax({
