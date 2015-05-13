@@ -34,9 +34,9 @@
                     <a id="ecu_time" class="list-group-item align-center" ></a>
                     <a class="list-group-item active align-center"><?php echo $this->lang->line('home_environment_benefits');?></a>
                     <a class="list-group-item benefit align-center"><?php echo $this->lang->line('home_equivalent');?></a>
-                    <a class="list-group-item benefit"><img src="<?php echo base_url('resources/images/car.png'); ?>"><div class="pull-right"><center><?php echo $gallon; ?><br><?php echo $this->lang->line('home_gallons'); ?></center></div></a>
-                    <a class="list-group-item benefit"><img src="<?php echo base_url('resources/images/tree.png'); ?>"><div class="pull-right"><center><?php echo $tree; ?><br><?php echo $this->lang->line('home_trees'); ?></center></div></a>
-                    <a class="list-group-item benefit"><img src="<?php echo base_url('resources/images/carbon.png'); ?>"><div class="pull-right"><center><?php echo $kg; ?><br><?php echo $this->lang->line('home_kg'); ?></center></div></a>
+                    <a class="list-group-item benefit"><img src="<?php echo base_url('resources/images/car.png'); ?>"><div class="pull-right"><center><?php echo intval($lifetimepower/12); ?><br><?php echo $this->lang->line('home_gallons'); ?></center></div></a>
+                    <a class="list-group-item benefit"><img src="<?php echo base_url('resources/images/tree.png'); ?>"><div class="pull-right"><center><?php echo intval($lifetimepower/27.2); ?><br><?php echo $this->lang->line('home_trees'); ?></center></div></a>
+                    <a class="list-group-item benefit"><img src="<?php echo base_url('resources/images/carbon.png'); ?>"><div class="pull-right"><center><?php echo intval($lifetimepower/1.36); ?><br><?php echo $this->lang->line('home_kg'); ?></center></div></a>
                 <?php endif; ?>
             </div>
         </aside>

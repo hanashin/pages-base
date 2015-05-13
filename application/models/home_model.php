@@ -26,7 +26,8 @@ class Home_model extends CI_Model {
             'timezone' => 'Asia/Shanghai',
             'eth0_mac' => '',
             'wlan0_mac' => '',
-            'grid_quality' => ''
+            'grid_quality' => '',
+            'week_energy' => ''
         );
         
         /* 查询ECU_ID */
@@ -125,11 +126,18 @@ class Home_model extends CI_Model {
             fclose($fp);
         }
         
-        /* 查询环保效益 */
-        $data['gallon'] = (int)($data['lifetimepower']/12);
-        $data['tree'] = (int)($data['lifetimepower']/27.2);
-        $data['kg'] = (int)($data['lifetimepower']/1.36);
-
+        /* 查询一周能量(用于环保效益) */
+        $dsn = 'sqlite:'.APPPATH.'../../../historical_data.db';
+        $this->pdo = new PDO($dsn);
+        $date_start = date("Ymd",time() - 518400);
+        $date_end = date("Ymd",time());
+        $query = "SELECT SUM(daily_energy) FROM daily_energy WHERE date BETWEEN $date_start AND $date_end";
+        $result = $this->pdo->query($query);
+        if(!empty($result)) {
+            $res = $result->fetch(PDO::FETCH_NUM);
+            $data['week_energy'] = $res[0];
+        }
+        
         return $data;
     }
 

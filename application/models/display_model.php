@@ -186,44 +186,6 @@ class Display_model extends CI_Model {
     
         return $data;
     }
-    
-    /* 获取optimizer数据库数据 */
-    public function get_optimizer($table)
-    {
-        //重新连接record数据库
-        $dsn = 'sqlite:'.APPPATH.'../../../optimizer.db';
-        $this->pdo = new PDO($dsn);
-    
-        //查询数据库中的所有表名
-        $table_name = array();
-        $query = "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name";
-        $result = $this->pdo->prepare($query);
-        if(!empty($result))
-        {
-            $result->execute();
-            $res = $result->fetchAll();
-            foreach ($res as $key => $value) {
-                $table_name[$key] = $value[0];
-            }
-        }
-    
-        //查询数据库中某张表中的数据
-        $table_value = array();
-        //$query = "SELECT * FROM $table ORDER BY date_time DESC LIMIT 0,2000";
-        $query = "SELECT * FROM $table";
-        $result = $this->pdo->prepare($query);
-        if(!empty($result))
-        {
-            $result->execute();
-            $res = $result->fetchAll(PDO::FETCH_ASSOC);
-            $table_value = $res;
-        }
-    
-        $data['table_name'] = $table_name;
-        $data['table_value'] = $table_value;
-    
-        return $data;
-    }
 
 }
 
