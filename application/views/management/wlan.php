@@ -150,7 +150,7 @@
                                 echo "<td>";
                                 $signal = (int)log($value['quality'], 2);
                                 if($signal > 5)$signal = 5;
-                                echo "<span><img src=\"".base_url("images/signal$signal.png")."\"></span>";
+                                echo "<span><img src=\"".base_url("resources/images/signal$signal.png")."\"></span>";
                                 echo "</td>\n";  
                                  //隐藏项
                                 echo "<td>\n";
