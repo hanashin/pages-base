@@ -6,7 +6,7 @@
   <table class="table table-condensed table-striped table-hover table-bordered">
     <thead>
       <tr>
-        <th class="col-xs-4"><?php echo $this->lang->line('gfdi_inverter_id')?></th>
+        <th class="col-xs-4"><?php echo $this->lang->line('device_id')?></th>
         <th class="col-xs-4"><?php echo $this->lang->line('gfdi_state')?></th>
         <th class="col-xs-4"><?php echo $this->lang->line('gfdi_unlock')?></th>
       </tr>

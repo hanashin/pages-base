@@ -2,12 +2,12 @@
   <table class="table table-condensed table-striped table-hover table-bordered">
     <thead>
       <tr>
-        <th scope="col"><?php echo $this->lang->line('data_inverter_id')?></th>
-        <th scope="col"><?php echo $this->lang->line('data_current_power')?></th>
-        <th scope="col"><?php echo $this->lang->line('data_grid_frequency')?></th>
-        <th scope="col"><?php echo $this->lang->line('data_grid_voltage')?></th>
-        <th scope="col"><?php echo $this->lang->line('data_temperature')?></th>
-        <th scope="col"><?php echo $this->lang->line('data_date')?></th>
+        <th scope="col"><?php echo $this->lang->line('device_id')?></th>
+        <th scope="col"><?php echo $this->lang->line('realtimedata_current_power')?></th>
+        <th scope="col"><?php echo $this->lang->line('realtimedata_grid_frequency')?></th>
+        <th scope="col"><?php echo $this->lang->line('realtimedata_grid_voltage')?></th>
+        <th scope="col"><?php echo $this->lang->line('realtimedata_temperature')?></th>
+        <th scope="col"><?php echo $this->lang->line('realtimedata_date')?></th>
       </tr>
     </thead>
     <tbody>

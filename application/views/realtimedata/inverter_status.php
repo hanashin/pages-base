@@ -2,7 +2,7 @@
   <table class="table table-condensed table-striped table-hover table-bordered">
     <thead>
       <tr>
-        <th scope="col"><?php echo $this->lang->line('status_inverter_id')?></th>
+        <th scope="col"><?php echo $this->lang->line('device_id')?></th>
         <th scope="col"><?php echo $this->lang->line('status_channel')?></th>
         <th scope="col"><?php echo $this->lang->line('status_status')?></th>
         <th scope="col"><?php echo $this->lang->line('status_energy')?></th>

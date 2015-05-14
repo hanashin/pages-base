@@ -3,7 +3,7 @@
       <tr>
         <th><?php echo $this->lang->line('display_status_event_id')?></th>
         <th><?php echo $this->lang->line('display_status_event')?></th>
-        <th><?php echo $this->lang->line('display_status_inverter_id')?></th>
+        <th><?php echo $this->lang->line('device_id')?></th>
         <th><?php echo $this->lang->line('display_status_date')?></th>
       </tr>
     </thead>

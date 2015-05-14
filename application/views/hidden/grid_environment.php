@@ -8,7 +8,7 @@
 <table class="table table-condensed table-striped table-hover table-bordered">
   <thead>
     <tr>
-      <th class="col-xs-3"><?php echo $this->lang->line('inverter_id')?></th>
+      <th class="col-xs-3"><?php echo $this->lang->line('device_id')?></th>
       <th class="col-xs-3"><?php echo $this->lang->line('grid_environment_result')?></th>
       <th class="col-xs-4"><?php echo $this->lang->line('grid_environment_setting')?></th>
       <th class="col-xs-1"></th>

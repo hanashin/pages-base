@@ -6,7 +6,7 @@
   <table class="table table-condensed table-striped table-hover table-bordered">
     <thead>
       <tr>
-        <th class="col-xs-3"><?php echo $this->lang->line('switch_inverter_id')?></th>
+        <th class="col-xs-3"><?php echo $this->lang->line('device_id')?></th>
         <th class="col-xs-3"><?php echo $this->lang->line('switch_state')?></th>
         <th class="col-xs-3"><?php echo $this->lang->line('switch_turn_on')?></th>
         <th class="col-xs-3"><?php echo $this->lang->line('switch_turn_off')?></th>

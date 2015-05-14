@@ -13,9 +13,9 @@
             
             <div class="navbar-collapse collapse" id="navbar-menu">
                 <ul class="nav navbar-nav ">
-                    <li><a href="<?php echo base_url('index.php/home');?>"<?php if(!strncmp($page, "home", 4)){echo " class=\"active\"";}?>><?php echo $this->lang->line('item_1')?></a></li>
-                    <li><a href="<?php echo base_url('index.php/realtimedata');?>"<?php if(!strncmp($page, "realtimedata", 12)){echo " class=\"active\"";}?>><?php echo $this->lang->line('item_2')?></a><span> </span></li>
-                    <li><a href="<?php echo base_url('index.php/management');?>"<?php if(!strncmp($page, "management", 10)){echo " class=\"active\"";}?>><?php echo $this->lang->line('item_4')?></a><span> </span></li>
+                    <li><a href="<?php echo base_url('index.php/home');?>"<?php if(!strncmp($page, "home", 4)){echo " class=\"active\"";}?>><?php echo $this->lang->line('home')?></a></li>
+                    <li><a href="<?php echo base_url('index.php/realtimedata');?>"<?php if(!strncmp($page, "realtimedata", 12)){echo " class=\"active\"";}?>><?php echo $this->lang->line('realtimedata')?></a><span> </span></li>
+                    <li><a href="<?php echo base_url('index.php/management');?>"<?php if(!strncmp($page, "management", 10)){echo " class=\"active\"";}?>><?php echo $this->lang->line('management')?></a><span> </span></li>
                 </ul>
             </div>
         </div>
@@ -28,7 +28,7 @@
         <aside class="col-md-3 col-md-push-9">
             <div class="list-group">
                 <?php if(!empty($nav))foreach($nav as $key => $value): ?>              
-                    <a href="<?php echo base_url($value['url']); ?>" class="list-group-item <?php if($value['active'] == 1) echo 'active'; ?>"><?php echo $this->lang->line("function_{$value['name']}"); ?></a>
+                    <a href="<?php echo base_url($value['url']); ?>" class="list-group-item <?php if($value['active'] == 1) echo 'active'; ?>"><?php echo $this->lang->line("{$value['name']}"); ?></a>
                 <?php endforeach; ?>
                 <?php if(!strncmp($page, "home", 4)): ?>
                     <a id="ecu_time" class="list-group-item align-center" ></a>
@@ -45,7 +45,7 @@
         <article class="col-md-9 col-md-pull-3">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <?php echo $this->lang->line("function_$func");
+                    <?php echo $this->lang->line("$func");
                         if (!empty($table)){
                         echo " &#8680; ".$table;
                         }

@@ -8,7 +8,7 @@
 <table class="table table-condensed table-striped table-hover table-bordered">
   <thead>
     <tr>
-      <th class="col-xs-5"><?php echo $this->lang->line('inverter_id')?></th>
+      <th class="col-xs-5"><?php echo $this->lang->line('device_id')?></th>
       <th class="col-xs-5"><?php echo $this->lang->line('signal_level')?></th>
       <th class="col-xs-1"></th>
     </tr>

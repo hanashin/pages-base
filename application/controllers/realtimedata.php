@@ -7,7 +7,7 @@ class Realtimedata extends CI_Controller {
         'realtimedata' => array(
             'url' => 'index.php/realtimedata',
             'active' => '0',
-            'name' => 'data'
+            'name' => 'realtimedata'
             ),
         'power_graph' => array(
             'url' => 'index.php/realtimedata/power_graph',
@@ -53,7 +53,7 @@ class Realtimedata extends CI_Controller {
     {
         //页面、标题、导航
         $data['page'] = $this->page;
-        $data['func'] = "data";
+        $data['func'] = "realtimedata";
         $this->nav['realtimedata']['active'] = '1';
         $data['nav'] = $this->nav;
         

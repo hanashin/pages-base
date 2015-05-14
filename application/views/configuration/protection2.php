@@ -173,7 +173,7 @@
           <?php
             if(!empty($parameters))
             {
-              echo "<th>".$this->lang->line('protection_inverter_id')."</th>";
+              echo "<th>".$this->lang->line('device_id')."</th>";
               echo "<th>".$this->lang->line('protection_under_voltage_fast')."</th>";
               echo "<th>".$this->lang->line('protection_over_voltage_fast')."</th>";
               echo "<th>".$this->lang->line('protection_under_voltage_slow')."</th>";

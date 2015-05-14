@@ -5,7 +5,7 @@
 <table class="table table-condensed table-striped table-hover table-bordered">
   <thead>
     <tr>
-      <th><?php echo $this->lang->line('maxpower_inverter_id')?></th>
+      <th><?php echo $this->lang->line('device_id')?></th>
       <th><?php echo $this->lang->line('maxpower_maxpower')?></th>
       <th><?php echo $this->lang->line('maxpower_actual_maxpower')?></th>
       <th></th>

@@ -3,7 +3,7 @@
 <table class="table table-condensed table-striped table-bordered">    
     <tr>
         <!-- ECU ID -->
-        <th scope="row" class="col-xs-6"><?php echo $this->lang->line('home_ecuid'); ?></th>
+        <th scope="row" class="col-xs-6"><?php echo $this->lang->line('ecu_id'); ?></th>
         <td><?php echo $ecuid;?></td>
     </tr>        
     <tr>
