@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">   
 
     <title><?php echo $this->lang->line('title')?></title>
-    <link type="image/x-icon" href="<?php echo base_url('resources/images/logo-icon.png');?>" rel="shortcut icon">    
+    <link type="image/x-icon" href="<?php echo base_url('resources/images/favicon.ico');?>" rel="shortcut icon">    
     <link href="<?php echo base_url('resources/css/bootstrap.min.css');?>" rel="stylesheet">
     <link href="<?php echo base_url('resources/css/ecu-style.css');?>" rel="stylesheet">
     <link href="<?php echo base_url('resources/css/bootstrapValidator.css');?>" rel="stylesheet">    
