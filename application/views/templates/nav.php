@@ -2,7 +2,7 @@
 <nav>
     <div class="navbar navbar-default navbar-menu">
         <div class="container">
-            <p class="navbar-menu-title"><?php echo $this->lang->line('energy_control')?></p>     
+            <p class="navbar-menu-title"><?php echo $this->lang->line($page)?></p>     
             <div class="navbar-header">            
                 <button class="navbar-toggle" data-target="#navbar-menu" data-toggle="collapse" type="button">
                     <span class="icon-bar"></span>
@@ -55,7 +55,7 @@
                         <button type="button" class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown"><?php echo $this->lang->line('button_more');?> <span class="caret"></span></button>
                         <ul class="dropdown-menu" role="menu">
                             <?php foreach($nav as $key => $value): ?>              
-                                <a href="<?php echo base_url($value['url']); ?>" class="list-group-item <?php if($value['active'] == 1) echo 'active'; ?>"><?php echo $this->lang->line("function_{$value['name']}"); ?></a>
+                                <a href="<?php echo base_url($value['url']); ?>" class="list-group-item <?php if($value['active'] == 1) echo 'active'; ?>"><?php echo $this->lang->line("{$value['name']}"); ?></a>
                             <?php endforeach; ?>   
                         </ul>
                     </div>
