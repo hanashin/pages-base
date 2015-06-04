@@ -29,4 +29,4 @@
   </div>
 </form>
 
-<script src="<?php echo base_url('js/datepicker/WdatePicker.js');?>"></script>
+<script src="<?php echo base_url('resources/js/datepicker/WdatePicker.js');?>"></script>
